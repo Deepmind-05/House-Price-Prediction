@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bangalore House Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img"></div>
+    <form class="form">
+        <label>Enter Total Area(in sqft.):</label>
+        <input type="text" placeholder="Total Area" name="sqft">
+        <br><br>
+        
+        <label for="location">Select Location:</label>
+        <select id="location">
+           <!--js will insert all options here-->
+        </select>
+        <br><br>
+        
+        <label>Select BHK:</label>
+        <div class="bhk-buttons">
+          <!-- Each button sets a value and buttons -->
+          <button type="button" name="bhk" value="2">2 BHK</button>
+          <button type="button" name="bhk" value="3">3 BHK</button>
+          <button type="button" name="bhk" value="4">4 BHK</button>
+          <button type="button" name="bhk" value="5">5 BHK</button>
+          <button type="button" name="bhk" value="6">6 BHK</button>
+        </div>
+        <br><br>
+        
+        <label>Select No. of Bathrooms:</label>
+        <div class="bath-buttons">
+          <!-- Each button sets a value and buttons -->
+          <button type="button" name="bath" value="2">2 Bathrooms</button>
+          <button type="button" name="bath" value="3">3 Bathrooms</button>
+          <button type="button" name="bath" value="4">4 Bathrooms</button>
+          <button type="button" name="bath" value="5">5 Bathrooms</button>
+          <button type="button" name="bath" value="6">6 Bathrooms</button>
+        </div>
+        <br><br>
+        
+        <button type="submit">Predict Home Prices</button>
+        <h2 id="estimatedPrice">Estimated Price: --</h2>
+    </form>
+</body>
+</html>
